@@ -547,7 +547,7 @@ async function processProjectGeneration(project) {
     }
 }
 // Start server
-app.listen(PORT, () => {
+app.listen(PORT,"0.0.0.0", () => {
     console.log(`Server running on http://localhost:${PORT}`);
     // Ensure Projects directory exists
     promises_1.default.mkdir(PROJECTS_DIR, { recursive: true }).catch(console.error);
